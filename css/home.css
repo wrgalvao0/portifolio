@@ -9,13 +9,19 @@
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: white;
+    color: white !important;
 }
 .text-secondary{
     font-size: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: white;
+    color: white !important;
+}
+.title-banner-principal{
+    font-family: "Open Sans", sans-serif;
+    font-size: 30pt;
+    font-weight: bold;
+    color: var(--amarelo);
 }
 .titles{
     font-family: "Open Sans", sans-serif;
@@ -53,3 +59,32 @@ nav{
     outline: none;
     box-shadow: none;
 }
+
+/*estilizacao banner-principal*/
+.banner-principal{
+    height: 600px;
+    background-image: url('../img/Banner-principal/banner.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+    url('../img/Banner-principal/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (min-width: 992px) { /* Aplica-se a telas lg */
+    .title-banner-principal {
+        max-width: 350px; /* Define a largura máxima */
+        text-align: center; /* Centraliza o texto */
+        margin: 0 auto; /* Centraliza o elemento horizontalmente */
+        word-wrap: break-word; /* Garante que o texto quebre se necessário */
+    }
+}
+
+@media (min-width: 768px) { /* Aplica-se a telas md */
+    .title-banner-principal {
+        max-width: 350px; /* Define a largura máxima */
+        text-align: center; /* Centraliza o texto */
+        margin: 0 auto; /* Centraliza o elemento horizontalmente */
+        word-wrap: break-word; /* Garante que o texto quebre se necessário */
+    }
+}
+
