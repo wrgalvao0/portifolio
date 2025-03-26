@@ -5,6 +5,7 @@
     --pretoForte: #222222;
     --pretoMedio: #2F2F2F;
 }
+/* Estilização geral */
 .text-general{
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -33,6 +34,9 @@
     font-family: "Open Sans", sans-serif;
     font-family: 14px;
     color: var(--amarelo);
+}
+body{
+    background-color: var(--pretoMedio);
 }
 
 /* Estilização da navbar */
@@ -87,4 +91,40 @@ nav{
         word-wrap: break-word; /* Garante que o texto quebre se necessário */
     }
 }
+/* Estilização seção sobre */
+.foto{
+    width: 300px;
+    height: 226px;
+    background-image: url('../img/foto/perfil.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.btn-primary{
+    background-color: var(--amarelo) !important;
+    border: 1px solid var(--amarelo) !important;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: transparent !important;
+}
+.btn-primary:focus{
+    background-color: var(--amarelo) !important;
+}
+.btn-secondary{
+    background-color: transparent;
+    border: 1px solid var(--amarelo);
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background-color: var(--amarelo);
+}
+.btn-secondary:focus{
+    background-color: transparent !important;
+}
 
+@media (min-width: 768px) and (max-width: 991px) { /* Para telas md */
+    .foto {
+        width: 2000px !important; /* Aumenta a altura em telas médias */
+    }
+}
