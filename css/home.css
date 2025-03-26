@@ -128,3 +128,23 @@ nav{
         width: 2000px !important; /* Aumenta a altura em telas médias */
     }
 }
+
+/* Estilização secao de serviços*/
+.card{
+    background-color: var(--pretoForte);
+}
+.card-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.card-title{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.card-img-top{
+    width: 50px;
+}
