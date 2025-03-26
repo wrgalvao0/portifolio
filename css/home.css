@@ -38,6 +38,21 @@
 body{
     background-color: var(--pretoMedio);
 }
+.btn-projeto{
+    background-color: var(--amarelo);
+    border: 1px solid var(--amarelo);
+    font-weight: bold;
+    color: white;
+    width: 200px;
+}
+.btn-projeto:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--amarelo);
+}
+.icon-arrow{
+    width: 30px;
+}
 
 /* Estilização da navbar */
 nav{
@@ -163,5 +178,42 @@ nav{
 @media(min-width: 1024px) and (max-width: 1280px){
     .card{
         height: 230px
+    }
+}
+
+/* Estilização secao de projetos */
+#img-projeto{
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/projetos/HOSPEDAGEM+.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media(min-width: 992px){
+    #img-projeto{
+        width: 100% !important;
+        height: 35vh !important;
+        background-image: url('../img/projetos/HOSPEDAGEM+.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+    } 
+}
+
+@media(min-width: 768px){
+    #img-projeto{
+        width: 100%;
+        height: 35vh;
+        background-image: url('../img/projetos/HOSPEDAGEM+.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    } 
+}
+@media(max-width: 576px){
+    .img-projeto{
+        width: 100%;
     }
 }
