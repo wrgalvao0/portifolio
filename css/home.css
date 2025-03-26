@@ -1,6 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /* PALETA DE CORES */
 :root{
     --amarelo: #E1A90D;
     --pretoForte: #222222;
     --pretoMedio: #2F2F2F;
+}
+.text-general{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.text-secondary{
+    font-size: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.titles{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--amarelo);
+}
+.subtitles{
+    font-family: "Open Sans", sans-serif;
+    font-family: 14px;
+    color: var(--amarelo);
+}
+
+/* Estilização da navbar */
+nav{
+    background-color: var(--pretoForte);
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: var(--amarelo);
+}
+.nav-link:focus{
+    color: white;
+}
+.navbar-toggler{
+    background-color: var(--amarelo);
+    border: 1px solid var(--amarelo);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
 }
