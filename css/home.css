@@ -132,6 +132,7 @@ nav{
 /* Estilização secao de serviços*/
 .card{
     background-color: var(--pretoForte);
+    border-radius: 0px;
 }
 .card-text{
     font-family: "Open Sans", sans-serif;
@@ -146,5 +147,21 @@ nav{
     color: white;
 }
 .card-img-top{
-    width: 50px;
+    width: 40px;
+}
+@media(max-width: 576px){
+    .card{
+        width: 95% !important;
+        margin-bottom: 10px;
+    }
+}
+@media(min-width: 768px) and (max-width: 1023px){
+    .card{
+        height: 290px
+    }
+}
+@media(min-width: 1024px) and (max-width: 1280px){
+    .card{
+        height: 230px
+    }
 }
