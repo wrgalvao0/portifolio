@@ -270,13 +270,24 @@ nav{
     background-color: var(--pretoForte);
     color: white;
 }
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
 
 .accordion-button::after {
     filter: invert(1); /* Inverte a cor do ícone padrão */
+    
 }
 
 .accordion-button:not(.collapsed)::after {
     filter: invert(1); /* Garante que o ícone continue branco quando aberto */
+    
+}
+/* Remove a borda azul ao clicar no botão do acordeão */
+.accordion-button:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: none; /* Remove a sombra padrão */
 }
 
 @media(max-width: 576px){

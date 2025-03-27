@@ -69,7 +69,7 @@
         necessidades dos clientes e ofereçam a melhor experiência possível.
         Vamos construir algo incrível juntos?</p>
       <div class="d-flex flex-row justify-content-center align-items-center">
-        <a href="" class="btn btn-primary me-3">Portifólio</a>
+        <a href="#portifolio" class="btn btn-primary me-3">Portifólio</a>
         <a href="" class="btn btn-secondary">Acessar CV</a>
       </div>
     </div>
@@ -336,22 +336,22 @@
     </div>
     <div class="area-form">
       <p class="text-general text-center mb-2 mt-2">Fique a vontade para entrar em contato comigo !</p>
-      <form action="">
+      <form id="form-contato" action="POST">
         <div class="d-flex flex-column flex-lg-row justify-content-lg-center">
           <div class="d-flex flex flex-column flex-lg-column me-lg-1 ms-lg-3 inputs-form">
-            <label for="nome" class="form-label text-general">Nome Completo</label>
-            <input type="text" id="nome" placeholder="Digite o seu nome" class="form-control input">
+            <label for="email" class="form-label text-general">Seu Email</label>
+            <input type="email" id="email" name="mail" placeholder="Digite o seu email" class="form-control input" required>
           </div>
           <div class="d-flex flex-column flex-lg-column mt-2 mt-lg-0 ms-lg-1 inputs-form">
             <label for="whatsapp" class="text-general form-label">Whatsapp</label>
-            <input type="tel" placeholder="Digite seu Whatsapp" class="form-control input" id="whatsapp">
+            <input type="tel" name="telefone" placeholder="Digite seu Whatsapp" class="form-control input" id="whatsapp" required>
           </div>
         </div>
         <div
           class="d-flex flex-column justify-content-center align-items-center flex-lg-column justify-content-lg-center align-items-lg-center ms-lg-3">
           <label for="mensagem" class="text-general">Mensagem:</label>
-          <textarea name="" id="mensagem" placeholder="Digite a sua mensagem" class="form-control mt-lg-1 input"
-            id="mensagem"></textarea>
+          <textarea name="message" id="mensagem" placeholder="Digite a sua mensagem" class="form-control mt-lg-1 input"
+            id="mensagem"></textarea required>
         </div>
         <div class="d-flex flex-lg-row justify-content-center align-items-center mt-lg-2 mt-2">
           <input type="submit" class="btn btn-primary">
@@ -402,7 +402,8 @@
       </div>
     </div>
   </footer>
-
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript" src="js/email/email.js"></script>
 </body>
 
 </html>
