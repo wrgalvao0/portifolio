@@ -102,18 +102,9 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
 }
-@media (min-width: 992px) { /* Aplica-se a telas lg */
-    .title-banner-principal {
-        max-width: 350px; /* Define a largura máxima */
-        text-align: center; /* Centraliza o texto */
-        margin: 0 auto; /* Centraliza o elemento horizontalmente */
-        word-wrap: break-word; /* Garante que o texto quebre se necessário */
-    }
-}
-
 @media (min-width: 768px) { /* Aplica-se a telas md */
     .title-banner-principal {
-        max-width: 350px; /* Define a largura máxima */
+        max-width: 380px; /* Define a largura máxima */
         text-align: center; /* Centraliza o texto */
         margin: 0 auto; /* Centraliza o elemento horizontalmente */
         word-wrap: break-word; /* Garante que o texto quebre se necessário */
@@ -294,11 +285,13 @@ nav{
     }
     #faq{
         width: 100%;
+        margin-top: 10px;
     }
 }
 @media(min-width: 768px){
     #faq{
         width: 100%;
+        margin-top: 10px;
     }
     .icons-canais-atendimento{
         width: 7%;
@@ -307,6 +300,7 @@ nav{
 @media(min-width: 992px){
     #faq{
         width: 50%;
+        margin-top: 0px;
     }
     .area-form{
         width: 50%;
