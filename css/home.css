@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* Cor do chevron quando o acordeão está fechado */
+.accordion-button::after {
+    color: white !important; /* Define a cor do ícone como branco */
+}
+
+/* Cor do chevron quando o acordeão está aberto */
+.accordion-button:not(.collapsed)::after {
+    color: var(--amarelo) !important; /* Define a cor do ícone como amarelo */
+}@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /* PALETA DE CORES */
 :root{
     --amarelo: #E1A90D;
@@ -53,7 +61,9 @@ body{
 .icon-arrow{
     width: 30px;
 }
-
+footer{
+    background-color: var(--pretoForte);
+}
 /* Estilização da navbar */
 nav{
     background-color: var(--pretoForte);
@@ -77,6 +87,9 @@ nav{
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
+}
+.titles-footer{
+    font-weight: bold;
 }
 
 /*estilizacao banner-principal*/
@@ -245,14 +258,6 @@ nav{
 #faq{
     width: 50%;
 }
-.accordion-item{
-    background-color: var(--pretoForte);
-    color: white;
-}
-.accordion-button{
-    background-color: var(--pretoForte);
-    color: white;
-}
 .icons-canais-atendimento{
     width: 10%;
 }
@@ -266,6 +271,23 @@ nav{
 .input{
     border-radius: 0px;
 }
+.accordion-button {
+    background-color: black !important; /* Mantém o fundo preto */
+    color: white !important; /* Texto branco */
+}
+.accordion-body{
+    background-color: var(--pretoForte);
+    color: white;
+}
+
+.accordion-button::after {
+    filter: invert(1); /* Inverte a cor do ícone padrão */
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: invert(1); /* Garante que o ícone continue branco quando aberto */
+}
+
 @media(max-width: 576px){
     .icons-canais-atendimento{
         width: 10%;
@@ -286,4 +308,28 @@ nav{
     #faq{
         width: 50%;
     }
+    .area-form{
+        width: 50%;
+    }
+    
+}
+
+/* Estilização do footer */
+.icons-footer{
+    width: 10%;
+}
+.icon-clock{
+    width: 15%;
+}
+.icons-footer-sociais{
+    width: 13%;
+}
+.links-footer{
+    text-decoration: none;
+}
+.container-contato{
+    width: 250px;
+}
+.container-horarios{
+    width: 150px;
 }
