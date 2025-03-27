@@ -64,6 +64,12 @@ body{
 footer{
     background-color: var(--pretoForte);
 }
+.text-projetos{
+    text-align: justify;
+}
+.text-sobre{
+    text-align: justify;
+}
 /* Estilização da navbar */
 nav{
     background-color: var(--pretoForte);
