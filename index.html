@@ -339,18 +339,18 @@
       <form id="form-contato" action="POST">
         <div class="d-flex flex-column flex-lg-row justify-content-lg-center">
           <div class="d-flex flex flex-column flex-lg-column me-lg-1 ms-lg-3 inputs-form">
-            <label for="email" class="form-label text-general">Seu Email</label>
-            <input type="email" id="email" name="mail" placeholder="Digite o seu email" class="form-control input" required>
+            <label for="nome" class="form-label text-general">Nome</label>
+            <input type="text" id="nome" name="mail" placeholder="Digite o seu email" class="form-control input" required>
           </div>
           <div class="d-flex flex-column flex-lg-column mt-2 mt-lg-0 ms-lg-1 inputs-form">
-            <label for="whatsapp" class="text-general form-label">Whatsapp</label>
-            <input type="tel" name="telefone" placeholder="Digite seu Whatsapp" class="form-control input" id="whatsapp" required>
+            <label for="email" class="text-general form-label">Email</label>
+            <input type="email" name="email" placeholder="Digite seu Whatsapp" class="form-control input" id="email" required>
           </div>
         </div>
         <div
           class="d-flex flex-column justify-content-center align-items-center flex-lg-column justify-content-lg-center align-items-lg-center ms-lg-3">
           <label for="mensagem" class="text-general">Mensagem:</label>
-          <textarea name="message" id="mensagem" placeholder="Digite a sua mensagem" class="form-control mt-lg-1 input"
+          <textarea name="mensagem" id="mensagem" placeholder="Digite a sua mensagem" class="form-control mt-lg-1 input"
             id="mensagem"></textarea required>
         </div>
         <div class="d-flex flex-lg-row justify-content-center align-items-center mt-lg-2 mt-2">
@@ -402,7 +402,7 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript" src="js/email/email.js"></script>
 </body>
 
