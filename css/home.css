@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    max-width: 100%;
+    overflow-x: hidden; 
+}
 /* Cor do chevron quando o acordeão está fechado */
 .accordion-button::after {
     color: white !important; /* Define a cor do ícone como branco */
