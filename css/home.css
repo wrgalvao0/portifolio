@@ -125,11 +125,10 @@ nav{
 }
 /* Estilização seção sobre */
 .foto{
-    width: 300px;
     height: 226px;
-    background-image: url('../img/foto/perfil.jpg');
-    background-size: contain;
-    background-position: center;
+    background-image: url('../img/foto/foto2.jpg');
+    background-size: cover;
+    background-position: initial;
     background-repeat: no-repeat;
 }
 .btn-primary{
@@ -158,6 +157,12 @@ nav{
 @media (min-width: 768px) and (max-width: 991px) { /* Para telas md */
     .foto {
         width: 2000px !important; /* Aumenta a altura em telas médias */
+    }
+}
+
+@media(max-width: 576px){
+    .foto{
+        height: 350px;
     }
 }
 
